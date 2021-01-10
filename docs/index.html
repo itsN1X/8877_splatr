@@ -273,7 +273,7 @@ function cloud(droplet){
 	C=document.getElementById("clouds");
 	document.getElementById("lighthouse").textContent=droplet/1e9;
 	rain=Math.trunc(droplet/1e9)+1;
-	s=Math.max(Math.min(Math.trunc(2*innerWidth/rain),100),32)+"px";
+	s=Math.max(Math.min(Math.trunc(3*innerWidth/rain-3.2*rain),100),24)+"px";
 	for(let i = 0; i< rain;i++)
 	{
 		c=document.createElement("img");
