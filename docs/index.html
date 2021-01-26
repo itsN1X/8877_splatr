@@ -349,7 +349,8 @@ function cloud(droplet){
 	document.getElementById("h5").textContent=(droplet/1e11*5).toFixed(4);
 	cash(droplet);
 }
-r.send();
+//r.send();
+cloud(40e9);
 function cash(drops)
 {
 	g=new XMLHttpRequest();
